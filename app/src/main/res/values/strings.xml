@@ -1,5 +1,4 @@
 <resources>
     <string name="app_name">Practice_1</string>
-    <string name="click_here">Click here</string>
-    <string name="yolo">Hi man</string>
+    <string name="hola">Hola</string>
 </resources>

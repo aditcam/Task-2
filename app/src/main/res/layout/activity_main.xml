@@ -13,14 +13,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button1"
-        android:text="@string/click_here"
-        android:layout_margin="10dp"/>
-    <EditText
+        android:text="click here"
+        android:layout_margin="10dp"
+        android:onClick="print"
+        android:layout_centerInParent="true"/>
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!!"
-        android:id="@+id/et1"
-        android:layout_below="@id/button1"/>
+        android:id="@+id/tv1"
+        android:text="helloworld"
+        android:layout_below="@id/button1"
+        android:layout_margin="20dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
 
 
 </RelativeLayout>

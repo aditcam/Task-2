@@ -7,37 +7,32 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity implements OnClickListener{
-
+public class MainActivity extends AppCompatActivity{
+    Button button;
+    TextView textview;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       Button button;
-        EditText editText;
-        button =(Button)findViewById(R.id.button1);
-        button.setOnClickListener(this);
-
+       button =(Button)findViewById(R.id.button1);
+        textview =(TextView)findViewById(R.id.tv1);
     }
-    private void changeMessage() {
-
-      EditText editText = (EditText) findViewById(R.id.et1);
-        if(editText.getText().toString()=="Hello World!!")
-        { String p="Goodbye World";
-        editText.setText(p);}
-        else if(editText.getText().toString()=="Goodbye World")
-        {
-            String r="Hello World!!";
-            editText.setText(r);
-        }
-        }
-
-    @Override
-    public void onClick(View v) {
-        changeMessage();
-
+    public void print(View view)
+    {
+     if(textview.getText().toString().equals("helloworld"))
+     {
+         textview.setText("goodbyeworld");
+     }
+        else if(textview.getText().toString().equals("goodbyeworld"))
+     {
+         textview.setText("helloworld");
+     }
     }
+
+
+
 }
 
 
